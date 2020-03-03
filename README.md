@@ -11,3 +11,7 @@ As part of my research projects, I coded some scripts to parse fillings and extr
 **Corporate insider data**  
 
 The function [extract_insider_data()](https://github.com/rsljr/python-edgar/blob/master/insider_trading.ipynb) parses forms 3, 4 and 5. It takes the form and return a dataframe in which each row is a transaction reported in the form (see caveats in the function description).  
+
+**Executive compensation**
+
+The function [get_executive_compensatio()](https://github.com/rsljr/python-edgar/blob/master/get_exectuvive_compensation.ipynb) parses the form DEF14A to extract the "summary of compensation table". The function identifies the table and transforms it into a tidy dataframe. It works better with fillings submitted after 2004 (see caveats in the function description).  
