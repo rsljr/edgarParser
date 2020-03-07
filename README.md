@@ -14,4 +14,10 @@ The function [extract_insider_data()](https://github.com/rsljr/python-edgar/blob
 
 **Executive compensation**
 
-The function [get_executive_compensatio()](https://github.com/rsljr/python-edgar/blob/master/get_exectuvive_compensation.ipynb) parses the form DEF14A to extract the "summary of compensation table". The function identifies the table and transforms it into a tidy dataframe. It works better with fillings submitted after 2004 (see caveats in the function description).  
+The function [get_executive_compensatio()](https://github.com/rsljr/python-edgar/blob/master/get_exectuvive_compensation.ipynb) parses the form DEF14A to extract the "summary compensation table". The function identifies the table and transforms it into a tidy dataframe. It works better with fillings submitted after 2004 (see caveats in the function description).  
+
+**8-K form disclosure**
+
+There are two functions available for 8-K filings: [get_items()]() and [get_item_text()](). The *get_items()* identifies which items are mentioned in the form. You can check the page [Expansion of Form 8-K Items](https://www.sec.gov/rules/final/33-8400.htm) to see item meaning. The *get_item_text()* parses the 8-K filing and extracts the text associated with the item.  
+
+Visit [Accessing EDGAR Data](https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm) to know more about EDGAR.  
