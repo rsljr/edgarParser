@@ -18,6 +18,6 @@ The function [get_executive_compensatio()](https://github.com/rsljr/python-edgar
 
 ## 8-K form disclosure ##
 
-There are two functions available for 8-K filings: [get_items()](https://github.com/rsljr/python-edgar/blob/master/get_exectuvive_compensation.ipynb) and [get_item_text()](https://github.com/rsljr/python-edgar/blob/master/get_exectuvive_compensation.ipynb). The *get_items()* identifies which items are mentioned in the form. You can check the page [Expansion of Form 8-K Items](https://www.sec.gov/rules/final/33-8400.htm) to see item meaning. The *get_item_text()* parses the 8-K filing and extracts the text associated with the item.  
+There are two functions available for 8-K filings: [get_items()](https://github.com/rsljr/python-edgar/blob/master/get_8K.ipynb) and [get_item_text()](https://github.com/rsljr/python-edgar/blob/master/get_8K.ipynb). The *get_items()* identifies which items are mentioned in the form. You can check the page [Expansion of Form 8-K Items](https://www.sec.gov/rules/final/33-8400.htm) to see item meaning. The *get_item_text()* parses the 8-K filing and extracts the text associated with the item.  
 
 Visit [Accessing EDGAR Data](https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm) to know more about EDGAR.  
