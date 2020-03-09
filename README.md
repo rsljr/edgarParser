@@ -8,16 +8,16 @@ EDGAR is a rich source of data, but working with it is not straightforward. Alth
   
 As part of my research projects, I coded some scripts to parse fillings and extract the information I needed. I am making some of my scripts available to facilitate or inspire my fellow researchers facing similar problems.
 
-**Corporate insider data**  
+## Corporate insider data ##
 
 The function [extract_insider_data()](https://github.com/rsljr/python-edgar/blob/master/insider_trading.ipynb) parses forms 3, 4 and 5. It takes the form and return a dataframe in which each row is a transaction reported in the form (see caveats in the function description).  
 
-**Executive compensation**
+## Executive compensation ##
 
 The function [get_executive_compensatio()](https://github.com/rsljr/python-edgar/blob/master/get_exectuvive_compensation.ipynb) parses the form DEF14A to extract the "summary compensation table". The function identifies the table and transforms it into a tidy dataframe. It works better with fillings submitted after 2004 (see caveats in the function description).  
 
-**8-K form disclosure**
+## 8-K form disclosure ##
 
-There are two functions available for 8-K filings: [get_items()]() and [get_item_text()](). The *get_items()* identifies which items are mentioned in the form. You can check the page [Expansion of Form 8-K Items](https://www.sec.gov/rules/final/33-8400.htm) to see item meaning. The *get_item_text()* parses the 8-K filing and extracts the text associated with the item.  
+There are two functions available for 8-K filings: [get_items()](https://github.com/rsljr/python-edgar/blob/master/get_exectuvive_compensation.ipynb) and [get_item_text()](https://github.com/rsljr/python-edgar/blob/master/get_exectuvive_compensation.ipynb). The *get_items()* identifies which items are mentioned in the form. You can check the page [Expansion of Form 8-K Items](https://www.sec.gov/rules/final/33-8400.htm) to see item meaning. The *get_item_text()* parses the 8-K filing and extracts the text associated with the item.  
 
 Visit [Accessing EDGAR Data](https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm) to know more about EDGAR.  
