@@ -4,9 +4,9 @@
 >
 > Containing millions of company and individual filings, EDGAR benefits investors, corporations, and the U.S. economy overall by increasing the efficiency, transparency, and fairness of the securities markets. The system processes about 3,000 filings per day, serves up 3,000 terabytes of data to the public annually, and accommodates 40,000 new filers per year on average." [About EDGAR](https://www.sec.gov/edgar/about)
 
-EDGAR is a rich source of data, but working with it is not straightforward. Although there are many packages to access and download company fillings, parsing these fillings is a different story.  
+EDGAR is a rich source of data, but working with it is not straightforward. Although there are many packages to access and download company filings, parsing these filings is a different story.  
   
-As part of my research projects, I coded some scripts to parse fillings and extract the information I needed. I am making some of my scripts available to facilitate or inspire my fellow researchers facing similar problems.
+As part of my research projects, I coded some scripts to parse filings and extract the information I needed. I am making some of my scripts available to facilitate or inspire my fellow researchers facing similar problems.
 
 ## Corporate insider data ##
 
@@ -14,10 +14,10 @@ The function [extract_insider_data()](https://github.com/rsljr/python-edgar/blob
 
 ## Executive compensation ##
 
-The function [get_executive_compensatio()](https://github.com/rsljr/python-edgar/blob/master/get_exectuvive_compensation.ipynb) parses the form DEF14A to extract the "summary compensation table". The function identifies the table and transforms it into a tidy dataframe. It works better with fillings submitted after 2004 (see caveats in the function description).  
+The function [get_executive_compensation()](https://github.com/rsljr/python-edgar/blob/master/get_exectuvive_compensation.ipynb) parses the form DEF14A to extract the "summary compensation table". The function identifies the table and transforms it into a tidy dataframe. It works better with fillings submitted after 2004 (see caveats in the function description).  
 
 ## 8-K form disclosure ##
 
-There are two functions available for 8-K filings: [get_items()](https://github.com/rsljr/python-edgar/blob/master/get_8K.ipynb) and [get_item_text()](https://github.com/rsljr/python-edgar/blob/master/get_8K.ipynb). The *get_items()* identifies which items are mentioned in the form. You can check the page [Expansion of Form 8-K Items](https://www.sec.gov/rules/final/33-8400.htm) to see item meaning. The *get_item_text()* parses the 8-K filing and extracts the text associated with the item.  
+The function [parse_8k_filing()]()(https://github.com/rsljr/python-edgar/blob/master/get_8K.ipynb) parses 8-K forms to extract disclosed items and their associated text.  You can check the page [Expansion of Form 8-K Items](https://www.sec.gov/rules/final/33-8400.htm) to see item meaning.  
 
 Visit [Accessing EDGAR Data](https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm) to know more about EDGAR.  
