@@ -10,14 +10,14 @@ As part of my research projects, I coded some scripts to parse filings and extra
 
 ## Corporate insider data ##
 
-The function [extract_insider_data()](https://github.com/rsljr/python-edgar/blob/master/insider_trading.ipynb) parses forms 3, 4 and 5. It takes the form and return a dataframe in which each row is a transaction reported in the form (see caveats in the function description).  
+The function [extract_insider_data()](https://github.com/rsljr/python-edgar/blob/master/annotated%20notebooks/get_insider_trading.ipynb) parses forms 3, 4 and 5. It takes the form and return a dataframe in which each row is a transaction reported in the form (see caveats in the function description).  
 
 ## Executive compensation ##
 
-The function [get_executive_compensation()](https://github.com/rsljr/python-edgar/blob/master/get_exectuvive_compensation.ipynb) parses the form DEF14A to extract the "summary compensation table". The function identifies the table and transforms it into a tidy dataframe. It works better with fillings submitted after 2004 (see caveats in the function description).  
+The function [get_executive_compensation()](https://github.com/rsljr/python-edgar/blob/master/annotated%20notebooks/get_exectuvive_compensation.ipynb) parses the form DEF14A to extract the "summary compensation table". The function identifies the table and transforms it into a tidy dataframe. It works better with fillings submitted after 2004 (see caveats in the function description).  
 
 ## 8-K form disclosure ##
 
-The function [parse_8k_filing()]()(https://github.com/rsljr/python-edgar/blob/master/get_8K.ipynb) parses 8-K forms to extract disclosed items and their associated text.  You can check the page [Expansion of Form 8-K Items](https://www.sec.gov/rules/final/33-8400.htm) to see item meaning.  
+The function [parse_8k_filing()](https://github.com/rsljr/python-edgar/blob/master/parse_8K.py) parses 8-K forms to extract disclosed items and their associated text.  You can check the page [Expansion of Form 8-K Items](https://www.sec.gov/rules/final/33-8400.htm) to see item meaning.  
 
 Visit [Accessing EDGAR Data](https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm) to know more about EDGAR.  
