@@ -10,7 +10,7 @@ As part of my research projects, I coded some scripts to parse filings and extra
 
 ## 3, 4, and 5 form: Corporate insider data ##
 
-The function [parse_345()](https://github.com/rsljr/python-edgar/blob/master/annotated%20notebooks/get_insider_trading.ipynb) parses forms 3, 4 and 5. It takes the form and return a dataframe in which each row is a transaction reported in the form (see caveats in the function description).  
+The function [parse_345()](https://github.com/rsljr/python-edgar/blob/master/parse_345.py) parses forms 3, 4 and 5. It takes the form and return a dataframe in which each row is a transaction reported in the form (see caveats in the function description).  
 
 ## DEF 14A form: Executive compensation ##
 
@@ -22,10 +22,10 @@ The function [parse_8k_filing()](https://github.com/rsljr/python-edgar/blob/mast
 
 ## 13f form" Institutional Investors ##
 
-The function [parse_13f_filing()](https://github.com/rsljr/python-edgar/blob/master/parse_8K.py) parses 13f forms to extract data regarding institutional investors and their portfolios.
+The function [parse_13f_filing()](https://github.com/rsljr/python-edgar/blob/master/parse_13f.py) parses 13f forms to extract data regarding institutional investors and their portfolios.
 
 ## 10-K form: Business, Risk, MD&A ##
 
-The function [parse_10k_filing()](https://github.com/rsljr/python-edgar/blob/master/parse_8K.py) parses 10-K forms to extract the sections business description, risk, and management discussion and analysis.  
+The function [parse_10k_filing()](https://github.com/rsljr/python-edgar/blob/master/parse_10K.py) parses 10-K forms to extract the sections business description, risk, and management discussion and analysis.  
 
 Visit [Accessing EDGAR Data](https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm) to know more about EDGAR.  
