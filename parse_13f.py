@@ -167,7 +167,7 @@ def parse_13f_filing(link):
 
 
 
-    linkRequest = str(requests.get(link).content)
+    linkRequest = str(requests.get(link, headers={'User-Agent': 'Mozilla'}).content)
     contentPages = clean_text_xml(linkRequest)
     if len(contentPages) > 0: 
         investorData = parse_institutionalInvestorInfo(contentPages)

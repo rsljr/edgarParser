@@ -188,7 +188,7 @@ def parse_345(link):
         return(data)
 
 
-    linkRequest = str(requests.get(link).content) 
+    linkRequest = str(requests.get(link, headers={'User-Agent': 'Mozilla'}).content) 
     text = clean_text_xml(linkRequest)
     identityData = get_identity(text)
     dataNonTable = get_non_derivative_table(text)

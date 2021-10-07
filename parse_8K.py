@@ -20,7 +20,7 @@ import unicodedata
 def parse_8k_filing(link):
     # retrieve the text file from SEC
     def get_text(link):
-        page = requests.get(link)
+        page = requests.get(link, headers={'User-Agent': 'Mozilla'})
         html = bs(page.content, "lxml")
         text = html.get_text().replace(u'\xa0', ' ').replace("\t", " ").replace("\x92", "'").split("\n")
         return(text)
