@@ -31,4 +31,4 @@ The function [parse_10k_filing()](https://github.com/rsljr/python-edgar/blob/mas
 Visit [Accessing EDGAR Data](https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm) to know more about EDGAR.  
 
  
-[![HitCount](https://hits.dwyl.com/rsljr/rsljr/edgarParser.svg?style=flat&show=unique)](http://hits.dwyl.com/rsljr/rsljr/edgarParser)
+[![HitCount]](http://hits.dwyl.com/rsljr/rsljr/edgarParser)
