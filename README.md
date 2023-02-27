@@ -29,3 +29,5 @@ The function [parse_13f_filing()](https://github.com/rsljr/python-edgar/blob/mas
 The function [parse_10k_filing()](https://github.com/rsljr/python-edgar/blob/master/parse_10K.py) parses 10-K forms to extract the sections: business description, risk, and management discussion and analysis.  
 
 Visit [Accessing EDGAR Data](https://www.sec.gov/edgar/searchedgar/accessing-edgar-data.htm) to know more about EDGAR.  
+
+[![HitCount](https://hits.dwyl.com/rsljr/https://githubcom/rsljr/edgarParser.svg?style=flat-square)](http://hits.dwyl.com/rsljr/https://githubcom/rsljr/edgarParser)
